@@ -1,0 +1,14 @@
+from django.urls import path
+from . import views
+
+urlpatterns = [
+    path('',views.MUchapter, name='MUchapter'),
+    path('homepage/', views.homepage, name='homepage'),
+    path('about/', views.about, name='about'),
+    path('Adminpage/',views.Adminpage, name='Adminpage'),
+    path('Register/',views.Registerpage, name='Register'),
+    path('Login/',views.Loginpage, name='Login'),
+    path('UserRegistration/',views.UserReg,name='UserRegistration')
+    
+    
+]
